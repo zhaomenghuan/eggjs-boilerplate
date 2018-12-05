@@ -1,0 +1,42 @@
+{
+  "name": "eggjs-boilerplate",
+  "version": "1.0.0",
+  "description": "A boilerplate project based on Egg.js Framework.",
+  "scripts": {
+    "start": "eggctl start --daemon",
+    "stop": "eggctl stop",
+    "dev": "egg-bin dev",
+    "sequelize:init": "node_modules/.bin/sequelize init:config",
+    "migrate:generate": "cross-env NODE_ENV=development node_modules/.bin/sequelize migration:generate --name",
+    "migrate:up": "cross-env NODE_ENV=development node_modules/.bin/sequelize db:migrate",
+    "migrate:down": "cross-env NODE_ENV=development node_modules/.bin/sequelize db:migrate:undo"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zhaomenghuan/eggjs-boilerplate.git"
+  },
+  "keywords": [
+    "egg",
+    "egg-boilerplate"
+  ],
+  "author": "zhaomenghuan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zhaomenghuan/eggjs-boilerplate/issues"
+  },
+  "homepage": "https://github.com/zhaomenghuan/eggjs-boilerplate#readme",
+  "dependencies": {
+    "egg": "^2.14.1",
+    "egg-scripts": "^2.10.0",
+    "egg-sequelize": "^4.2.0",
+    "egg-swagger-doc": "^1.4.6",
+    "egg-validate": "^2.0.2",
+    "ip": "^1.1.5",
+    "mysql2": "^1.6.4"
+  },
+  "devDependencies": {
+    "cross-env": "^5.2.0",
+    "egg-bin": "^4.9.0",
+    "sequelize-cli": "^5.4.0"
+  }
+}
