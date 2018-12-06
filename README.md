@@ -121,3 +121,30 @@ exports.swaggerdoc = {
   enable: true
 };
 ```
+
+### egg-jwt
+
+project：https://github.com/okoala/egg-jwt
+
+> **Install**
+
+```
+npm i egg-jwt --save
+```
+
+> **Usage & configuration**
+
+```js
+// {app_root}/config/plugin.js
+exports.jwt = {
+  enable: true,
+  package: "egg-jwt"
+};
+```
+
+```js
+// {app_root}/config/config.default.js
+exports.jwt = {
+  secret: "123456"
+};
+```

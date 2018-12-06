@@ -21,3 +21,11 @@ exports.swaggerdoc = {
   enable: true,
   package: 'egg-swagger-doc',
 };
+
+/**
+ * Token 机制
+ */
+exports.jwt = {
+  enable: true,
+  package: "egg-jwt"
+};

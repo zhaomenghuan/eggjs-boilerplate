@@ -1,9 +1,13 @@
 module.exports = appInfo => {
   const config = {};
 
-  config.keys = "aemmprojectwithnodeserver";
+  config.keys = "123456";
 
   config.middleware = ["errorHandler"];
+
+  config.jwt = {
+    secret: "123456"
+  };
 
   /**
    * swagger-ui
