@@ -15,11 +15,11 @@ exports.sequelize = {
 };
 
 /**
- * swagger-ui 文档
+ * swagger 解析
  */
-exports.swaggerdoc = {
+exports.swaggerbuilder = {
   enable: true,
-  package: 'egg-swagger-doc',
+  package: "egg-swagger-builder"
 };
 
 /**

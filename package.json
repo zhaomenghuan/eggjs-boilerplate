@@ -30,7 +30,7 @@
     "egg-jwt": "^3.1.4",
     "egg-scripts": "^2.10.0",
     "egg-sequelize": "^4.2.0",
-    "egg-swagger-doc": "^1.4.6",
+    "egg-swagger-builder": "^1.0.0",
     "egg-validate": "^2.0.2",
     "ip": "^1.1.5",
     "mysql2": "^1.6.4"

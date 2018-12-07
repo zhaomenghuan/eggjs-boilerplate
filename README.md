@@ -86,29 +86,29 @@ Reverts a migration：
 npm run migrate:down
 ```
 
-### egg-swagger-doc
+### egg-swagger-builder
 
-project：https://github.com/Ysj291823/egg-swagger-doc
+project：https://github.com/zhaomenghuan/egg-swagger-builder
 
 > **Install**
 
 ```
-npm i egg-swagger-doc -S
+npm i egg-swagger-builder -S
 ```
 
 > **Usage & configuration**
 
 ```js
 // {app_root}/config/plugin.js
-exports.swaggerdoc = {
+exports.swaggerbuilder = {
   enable: true,
-  package: "egg-swagger-doc"
+  package: "egg-swagger-builder"
 };
 ```
 
 ```js
 // {app_root}/config/config.default.js
-exports.swaggerdoc = {
+exports.swaggerbuilder = {
   dirScanner: "./app/controller",
   apiInfo: {
     title: "egg-swagger",

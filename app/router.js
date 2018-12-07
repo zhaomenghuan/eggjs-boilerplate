@@ -2,5 +2,8 @@ module.exports = app => {
   const { router, controller } = app;
 
   // 测试
-  router.get("/api/v1/", controller.home.index);
+  router.get("/", app.jwt, controller.home.index);
+
+  // 用户
+  router.resources("users", "/api/v1/users", app.jwt, controller.v1.users);
 };
