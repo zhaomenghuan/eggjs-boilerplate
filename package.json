@@ -33,7 +33,10 @@
     "egg-swagger-builder": "^1.0.0",
     "egg-validate": "^2.0.2",
     "ip": "^1.1.5",
-    "mysql2": "^1.6.4"
+    "koa-is-json": "^1.0.0",
+    "mysql2": "^1.6.4",
+    "stream-to-array": "^2.3.0",
+    "stream-wormhole": "^1.1.0"
   },
   "devDependencies": {
     "cross-env": "^5.2.0",

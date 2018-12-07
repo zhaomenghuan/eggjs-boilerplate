@@ -5,10 +5,20 @@ module.exports = appInfo => {
 
   config.keys = "123456";
 
-  config.middleware = ["errorHandler"];
+  config.middleware = ["errorHandler", "gzip"];
 
+  /**
+   * token
+   */
   config.jwt = {
     secret: "123456"
+  };
+
+  /**
+   * gzip
+   */
+  config.gzip = {
+    threshold: 1024 // 小于 1k 的响应体不压缩
   };
 
   /**
